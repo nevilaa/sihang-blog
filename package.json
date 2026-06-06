@@ -6,7 +6,7 @@
   "repository": "https://github.com/radishzzz/astro-theme-retypeset",
   "scripts": {
     "dev": "astro dev",
-    "build": "pnpm exec playwright install chromium --with-deps || pnpm exec playwright install chromium; astro build && pnpm apply-lqip",
+    "build": "pnpm install --no-frozen-lockfile && pnpm exec playwright install chromium --with-deps || true; pnpm exec astro build",
     "preview": "astro preview",
     "astro": "astro",
     "lint": "eslint .",
